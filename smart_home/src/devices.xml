@@ -1,0 +1,47 @@
+<device id=1>
+	<name>SHT11 Sensor</name>
+	<status>Sleeping</status>
+	<temperature>24</temperature>
+	<humidity>70</humidity>
+</device>
+<device id=2>
+	<name>Philio Multi-Sensor</name>
+	<status>Sleeping</status>
+	<temperature>70</temperature>
+	<lumination>10</lumination>
+	<motion>NOT Detected</motion>
+	<door>CLOSED</door>
+	<battery>100</battery>
+	<power_level>Normal</power_level>
+</device>
+<device id=3>
+	<name>Wall Plug</name>
+	<status>Sleeping</status>
+	<switch>OFF</switch>
+	<power_meter>0.0</power_meter>
+	<energy_meter>0.0</energy_meter>
+	<power_level>Normal</power_level>
+</device>
+<device id=4>
+	<name>Lamp Holder</name>
+	<status>Sleeping</status>
+	<switch>OFF</switch>
+	<power_level>Normal</power_level>
+</device>
+<device id=5>
+	<name>Flood Detector</name>
+	<status>Sleeping</status>
+	<flood>No Flood</flood>
+	<battery>100</battery>
+	<power_level>Normal</power_level>
+</device>
+<device id=6>
+	<name>MQ-9 CO Sensor</name>
+	<status>Sleeping</status>
+	<gas_level>80</gas_level>
+</device>
+<device id=7>
+	<name>Camera</name>
+	<status>Sleeping</status>
+	<stream_socket>3500</stream_socket>
+</device>
