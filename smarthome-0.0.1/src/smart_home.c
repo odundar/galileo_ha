@@ -42,7 +42,7 @@
 #include "camera.h"
 
 //Named Pipe
-#define FIFO_FILE       "SMARTHOMEPIPE"
+#define FIFO_FILE       "/home/root/smarthome/SMARTHOMEPIPE"
 #define USERBUF			80
 
 //Serial Device
@@ -89,6 +89,7 @@ void* zwave_message_handler(void* arg) {
 			parse_incoming_mesage(data, m_length);
 			write_to_serial_device(device_file, ack_buffer, 1);
 			update_device_xml(XML_FILE_NAME);
+			update_device_json(JSON_FILE_NAME);
 		} else if (m_length > 0 && expecting_reply == 1) {
 			//Check Incoming Message Type and Send ACK When it is Received
 			switch (data[0]) {
@@ -154,7 +155,6 @@ void* named_pipe_handler(void* arg) {
 		fp = fopen(FIFO_FILE, "r");
 		if (fgets(readbuf, USERBUF, fp) != NULL) {
 			snprintf(command, sizeof(readbuf), readbuf);
-			memset(readbuf,0,sizeof(readbuf));
 		}
 		fclose(fp);
 	}

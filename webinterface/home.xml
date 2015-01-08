@@ -1,0 +1,51 @@
+<home>
+<last_update_date>Fri Jan  9 01:29:55 2015
+</last_update_date>
+<device id=1>
+	<name>SHT11 Sensor</name>
+	<status>Active</status>
+	<temperature>24.000000</temperature>
+	<humidity>70.000000</humidity>
+</device>
+<device id=2>
+	<name>Philio Multi-Sensor</name>
+	<status>Sleeping</status>
+	<temperature>0.000000</temperature>
+	<lumination>0.000000</lumination>
+	<motion>NOT DETECTED</motion>
+	<door>CLOSED</door>
+	<battery>0</battery>
+	<power_level>Normal</power_level>
+</device>
+<device id=3>
+	<name>Fibaro Wall Plug</name>
+	<status>Active</status>
+	<switch>ON</switch>
+	<power_meter>0.000000</power_meter>
+	<energy_meter>2.120000</energy_meter>
+	<power_level>Normal</power_level>
+</device>
+<device id=4>
+	<name>Everspring Lamp Holder</name>
+	<status>Sleeping</status>
+	<switch>OFF</switch>
+	<power_level>Normal</power_level>
+</device>
+<device id=5>
+	<name>Everspring Flood Detector</name>
+	<status>Sleeping</status>
+	<flood>NOT DETECTED</flood>
+	<battery>0</battery>
+	<power_level>Normal</power_level>
+</device>
+<device id=6>
+	<name>MQ-9 CO Sensor</name>
+	<status>Active</status>
+	<gas_level>0</gas_level>
+</device>
+<device id=7>
+	<name>D-Link Network Camera</name>
+	<status>Active</status>
+	<port>3200</port>
+</device>
+</home>

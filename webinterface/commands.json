@@ -1,0 +1,50 @@
+{
+  "commands": {
+    "command": [
+      {
+        "id": "1",
+        "text": "show home status"
+      },
+      {
+        "id": "2",
+        "text": "show gas level"
+      },
+      {
+        "id": "3",
+        "text": "show temperature"
+      },
+      {
+        "id": "4",
+        "text": "show humidity"
+      },
+      {
+        "id": "5",
+        "text": "switch on 3"
+      },
+      {
+        "id": "6",
+        "text": "switch off 3"
+      },
+      {
+        "id": "7",
+        "text": "switch on 4"
+      },
+      {
+        "id": "8",
+        "text": "switch off 4"
+      },
+      {
+        "id": "9",
+        "text": "capture frame"
+      },
+      {
+        "id": "10",
+        "text": "save video"
+      },
+      {
+        "id": "11",
+        "text": "help"
+      }
+    ]
+  }
+}

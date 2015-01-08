@@ -51,7 +51,7 @@ void capture_frame() {
 	}
 	char buf[256];
 	printf("Capturing....\n");
-	sprintf(buf, "capture%d_%d_%d_%d_%d_%d.jpg", tm->tm_year, tm->tm_mon,
+	sprintf(buf, "/home/root/smarthome/captures/capture%d_%d_%d_%d_%d_%d.jpg", tm->tm_year, tm->tm_mon,
 			tm->tm_mday, tm->tm_hour, tm->tm_min, tm->tm_sec);
 	//Save Image to Filesystem
 	cvSaveImage(buf, pSaveImg, 0);
@@ -90,7 +90,7 @@ void record_video(int sec) {
 		return;
 	}
 	char buf[256];
-	sprintf(buf, "record%d_%d_%d_%d_%d_%d.avi", tm->tm_year, tm->tm_mon,
+	sprintf(buf, "/home/root/smarthome/captures/record%d_%d_%d_%d_%d_%d.avi", tm->tm_year, tm->tm_mon,
 			tm->tm_mday, tm->tm_hour, tm->tm_min, tm->tm_sec);
 	CvVideoWriter* videoWriter = cvCreateVideoWriter(buf,
 			CV_FOURCC('X', 'V', 'I', 'D'), 20, S, 1);

@@ -1,0 +1,61 @@
+{
+    "home": {
+	"last_update_date": "Fri Jan  9 01:29:55 2015 ",
+	"device": [
+	{
+    	"id": "1",
+    	"name": "SHT11 Sensor",
+    	"status": "Active",
+    	"temperature": "24.000000",
+    	"humidity": "70.000000"
+	},
+	{
+    	"id": "2",
+    	"name": "Philio Multi-Sensor",
+    	"status": "Sleeping",
+    	"temperature": "0.000000",
+    	"lumination": "0.000000",
+    	"motion": "NOT DETECTED",
+    	"door": "CLOSED",
+    	"battery": "0",
+    	"power_level": "Normal"
+	},
+	{
+    	"id": "3",
+    	"name": "Fibaro Wall Plug",
+    	"status": "Active",
+    	"switch": "ON",
+    	"power_meter": "0.000000",
+    	"energy_meter": "2.120000",
+    	"power_level": "Normal"
+	},
+	{
+    	"id": "4",
+    	"name": "Everspring Lamp Holder",
+    	"status": "Sleeping",
+    	"switch": "OFF",
+    	"power_level": "Normal"
+	},
+	{
+    	"id": "5",
+    	"name": "Everspring Flood Detector",
+    	"status": "Sleeping",
+    	"flood": "NOT DETECTED",
+    	"battery": "0",
+    	"power_level": "Normal"
+	},
+	{
+    	"id": "6",
+    	"name": "MQ-9 CO Sensor",
+    	"status": "Active",
+    	"gas_level": "0"
+	},
+	{
+    	"id": "7",
+    	"name": "D-Link Network Camera",
+    	"status": "Active",
+    	"port": "6336448"
+	}
+    	]
+	}
+}

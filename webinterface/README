@@ -1,0 +1,5 @@
+#This Folder includes the nodejs server to manage smart home application
+
+	/res folder includes the resource to show on web ui
+
+	/captures is a reserved folder for captures from network camera

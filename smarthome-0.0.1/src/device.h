@@ -42,7 +42,8 @@
 /**
  * Device Status XML Filename
  */
-#define XML_FILE_NAME 			"home.xml"
+#define XML_FILE_NAME 			"/home/root/smarthome/home.xml"
+#define JSON_FILE_NAME 			"/home/root/smarthome/home.json"
 /**
  * Constant Strings
  */
@@ -140,5 +141,11 @@ void* update_status(void* arg);
  * @return void
  */
 void print_device_xml(const char* file_name);
+/**
+ * Print JSON File
+ * @param file name
+ * @return void
+ */
+void print_device_json(const char* file_name);
 
 #endif /* DEVICE_H_ */
