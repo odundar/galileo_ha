@@ -8,8 +8,8 @@ DEPENDS += "opencv"
 
 SRC_URI = "file:///home/onur/tmp/galileo_ha/smarthome-0.0.1.tar.gz"
 
-SRC_URI[md5sum] = "46ef1371208ee57f89cbfa793a689eba"
-SRC_URI[sha256sum] = "dd4d8cd85c86c440173e60af36e227fbc2cffb151877ebaed8d474625cd889cd"
+SRC_URI[md5sum] = "f83413fd18148b92b39f7eb0e27d4e3c"
+SRC_URI[sha256sum] = "7812f9cca8684d5951789f1c00ee66f6a77c16f84ea6f70336f81ef1f94325dc"
 
 S = "${WORKDIR}/${PN}-${PV}"
 
@@ -19,6 +19,11 @@ do_install_append(){
 	mkdir ${D}/etc
 	mkdir ${D}/etc/init.d
 	mkdir ${D}/etc/rcS.d
+	mkdir ${D}/home
+	mkdir ${D}/home/root
+	mkdir ${D}/home/root/smarthome
+	mkdir ${D}/home/root/smarthome/captures
+	mkdir ${D}/home/root/smarthome/log
 	install -m 0755 ${S}/scripts/startha.sh ${D}${sysconfdir}/init.d
 	ln -sf ../init.d/startha.sh ${D}${sysconfdir}/rcS.d/S99startha.sh 
 }
