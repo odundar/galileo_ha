@@ -2,3 +2,5 @@ Yocto Recipe to Install smarthome-0.0.1 to Intel Galile and configure to start a
 
 #create directory in meta-oe/meta-oe/recipes-support/smarthome
 #copy recipe smarthome_0.0.1.bb 
+
+Includes the changes required for OpenCV to be work on IntelGalileo
