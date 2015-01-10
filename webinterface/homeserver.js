@@ -230,6 +230,7 @@ function handler(request, response) {
 	 * Serve Requested Static Files
 	 */
 	var filePath = path.join(__dirname, action);
+	var stat = fs.statSync(filePath);
 	
 	fs.exists(filePath, function (exists) {
 	   if (!exists) {
@@ -238,15 +239,13 @@ function handler(request, response) {
 	       response.end('404 Not Found');
 	       return;
 	    }
-	    // Set the Content Type
-	    var ext = path.extname(action);
-	    var contentType = 'text/plain';
-	    if (ext === '.gif') {
-	       contentType = 'image/gif'
-	    }
-	    response.writeHead(200, {'Content-Type': contentType });
-	    // Stream The File
-	    fs.createReadStream(filePath, 'utf-8').pipe(response);
+	    var readStream = fs.createReadStream(filePath);
+	    readStream.on('data',function(data){
+	    	response.write(data);
+	    });
+	    readStream.on('end',function(data){
+	    	response.end();
+	    });
 	});
 	return;
 }
