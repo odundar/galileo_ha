@@ -1,0 +1,13 @@
+<commands>
+	<command id='1'>show home status</command>
+	<command id='2'>show gas level</command>
+	<command id='3'>show temperature</command>
+	<command id='4'>show humidity</command>
+	<command id='5'>switch on 3</command>
+	<command id='6'>switch off 3</command>
+	<command id='7'>switch on 4</command>
+	<command id='8'>switch off 4</command>
+	<command id='9'>capture frame</command>
+	<command id='10'>stream camera</command>
+	<command id='11'>help</command>
+</commands>
