@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">SmartHome</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+    <string name="UpdateButton">UPDATE</string>
+    <string name="Home">HOME DEVICES</string>
+
+    <!-- Flat UI Colors -->
+    <color name="pinkish">#FF2D55</color>
+    <color name="velvet">#5856D6</color>
+    <color name="orange">#FF5E3A</color>
+    <color name="light_orange">#FF9500</color>
+    <color name="flashy_green">#0BD318</color>
+    <color name="light_green">#87FC70</color>
+    <color name="red">#FF3B30</color>
+    <color name="sky_blue">#1D62F0</color>
+
+</resources>

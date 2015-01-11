@@ -1,0 +1,46 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#bdc3c7"
+    android:orientation="vertical"
+    tools:context="com.galileha.smarthome.SmartHome" >
+
+    <TextView
+        android:id="@+id/skip"
+        style="@style/TextStyle"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="15dp"
+        android:background="@drawable/update_button"
+        android:text="@string/Home" />
+
+    <TextView
+        android:id="@+id/updateDate"
+        style="@style/TextStyleStatus"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:textColor="#2c3e50" />
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content" >
+
+        <ListView
+            android:id="@+id/list"
+            android:layout_width="fill_parent"
+            android:layout_height="380dp" >
+        </ListView>
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/update"
+        style="@style/TextStyle"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="20dp"
+        android:background="@drawable/update_button"
+        android:text="@string/UpdateButton"
+        android:onClick="onUpdate" />
+
+</LinearLayout>

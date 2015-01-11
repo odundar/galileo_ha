@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+ <!-- Button Styling: Need to link with Button background -->
+<selector xmlns:android="http://schemas.android.com/apk/res/android" >
+	  <item android:state_pressed="true" >
+	    <shape>
+	      <solid
+	          android:color="@color/light_orange" />
+	      <corners
+	          android:radius="3dp" />
+	    </shape>
+	  </item>
+	  <item>
+	    <shape>
+	      <solid
+	          android:color="@color/orange" />
+	      <corners
+	          android:radius="3dp" />
+	      <!-- <padding
+	          android:left="10dp"
+	          android:top="10dp"
+	          android:right="10dp"
+	          android:bottom="10dp" />  -->
+	    </shape>
+	  </item>
+</selector>
